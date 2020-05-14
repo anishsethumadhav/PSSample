@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
-    "id": "PSConfEU-Demo-Extension",
+    "id": "PSAnish-Demo-Extension",
     "version": "0.0.0",
-    "name": "PSConfEU Demo Extension",
-    "description": "PSConfEU JSON Web Token Demo Extension",
-    "publisher": "SLVStranger",
+    "name": "PSAnish Demo Extension",
+    "description": "PSAnish Demo Extension",
+    "publisher": "Mossad",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services.Cloud"
@@ -18,18 +18,18 @@
         "Azure Pipelines"
     ],
     "tags": [
-        "JSON",
+        "PS",
         "Demo"
     ],
     "contributions": [
         {
-            "id": "JWT-Demo",
+            "id": "PSAnish-Demo",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "PSJwt-v1.0"
+                "name": "PSsamp_v1.0"
             }
         }
     ],
@@ -45,8 +45,8 @@
             "packagePath": "lib"
         },
         {
-            "path": "PsJwt-v1.0",
-            "packagePath": "PsJwt-v1.0"
+            "path": "PSsamp_v1.0",
+            "packagePath": "PSsamp_v1.0"
         }
     ]
 }
