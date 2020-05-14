@@ -28,9 +28,9 @@
 param ($PAT)
 
 #region variables
-$script:ProductName = 'PSJwt'
-$script:Publisher = 'SLVStranger'
-$script:ExtensionId = 'PSConfEU-Demo-Extension'
+$script:ProductName = 'PSsample'
+$script:Publisher = 'Mossad'
+$script:ExtensionId = 'PSAnish-Demo-Extension'
 $script:ProductVersion = '1.0'
 $script:ProductPath = ( '{0}\{1}-v{2}' -f $PSScriptRoot, $ProductName, $ProductVersion)
 #endregion
@@ -56,10 +56,10 @@ task ps_modules {
 
     Copy-Item -Path '..\ps_modules\' -Filter *.* -Recurse -Destination ("$script:ProductPath") -Force
     
-    if (-not (Test-Path ("$script:ProductPath\ps_modules\PSJwt"))) {
-        $null = New-Item -Path ("$script:ProductPath\ps_modules\PSJwt") -ItemType Directory
+    if (-not (Test-Path ("$script:ProductPath\ps_modules\PSsample"))) {
+        $null = New-Item -Path ("$script:ProductPath\ps_modules\PSsample") -ItemType Directory
     }
-    Copy-Item -Path '..\Module\PSJwt' -Filter *.* -Recurse -Destination ("$script:ProductPath\ps_modules") -Force
+    Copy-Item -Path '..\Module\PSsample' -Filter *.* -Recurse -Destination ("$script:ProductPath\ps_modules") -Force
 }
 #endregion
 
