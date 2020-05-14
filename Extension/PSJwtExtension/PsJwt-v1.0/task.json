@@ -1,78 +1,34 @@
 {
-  "id": "ecf39f25-2f79-4907-886d-d096c446a320",
-  "name": "JWT-Demo",
-  "friendlyName": "JSON Web Token Extension Demo",
-  "description": "JSON Web Token Extension Demo for PowerShell Conference EU 2019",
-  "helpMarkDown": "Use this task to decode or create a JSON Web Token",
-  "category": "Deploy",
-  "author": "Stefan Stranger",
+  "id": "8725D100-2F3A-4ADF-9E1D-1371D80A1C58",
+  "name": "ps_Demo",
+  "friendlyName": "PS Extension Demo",
+  "description": "Extension Demo for PowerShell Anish",
+  "helpMarkDown": "Use this task to demo PS",
+  "category": "Build",
+  "author": "Anish Sethu",
   "version": {
     "Major": 1,
     "Minor": 0,
-    "Patch": 6
+    "Patch": 0
   },
   "preview": true,
-  "instanceNameFormat": "JSON Web Token Extension Demo",
+  "instanceNameFormat": "PS Extension Demo",
   "groups": [
     {
-      "name": "PSJwt",
-      "displayName": "PowerShell JSON Web Token",
-      "isExpanded": true
-    },
-    {
-      "name": "ConvertFrom",
-      "displayName": "Decode JSON Web Token",
-      "isExpanded": true
-    },
-    {
-      "name": "ConvertTo",
-      "displayName": "Create JSON Web Token",
+      "name": "Email",
+      "displayName": "PowerShell Email",
       "isExpanded": true
     }
   ],
   "inputs": [
+    
     {
-      "name": "action",
-      "type": "pickList",
-      "label": "Action",
-      "defaultValue": "convertfrom",
-      "required": true,
-      "groupName": "PSJwt",
-      "helpMarkDown": "Choose the action for PSJwt PowerShell Module",
-      "properties": {
-        "EditableOptions": "False"
-      },
-      "options": {
-        "convertfrom": "Decode JSON Web Token",
-        "convertto": "Create JSON Web Token"
-      }
-    },
-    {
-      "name": "token",
+      "name": "Email",
       "type": "string",
-      "label": "Token",
-      "required": true,
-      "groupName": "PSJwt",
-      "helpMarkDown": "JSON Web token",
-      "visibleRule": "action = convertfrom"
-    },
-    {
-      "name": "payload",
-      "type": "string",
-      "label": "Payload",
-      "required": true,
-      "groupName": "PSJwt",
-      "helpMarkDown": "Payload. Example: {\"FirstName\":\"Stefan\",\"LastName\":\"Stranger\"}",
-      "visibleRule": "action = convertto"
-    },
-    {
-      "name": "secret",
-      "type": "string",
-      "label": "Secret",
-      "required": true,
-      "groupName": "PSJwt",
-      "helpMarkDown": "Secret",
-      "visibleRule": "action = convertto"
+      "label": "email",
+      "required": false,
+      "groupName": "Email",
+      "helpMarkDown": "Email"
     }
   ],
   "execution": {
