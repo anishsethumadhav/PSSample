@@ -9,7 +9,7 @@
     "tfx-cli": "^0.7.5",
     "vss-web-extension-sdk": "^5.141.0"
   },
-  "author": "Stefan Stranger - Microsoft",
+  "author": "Anish Sethu - Microsoft",
   "repository": {
     "type": "git",
     "url": "git://github.com/stefanstranger/psconfeu2019.git"
